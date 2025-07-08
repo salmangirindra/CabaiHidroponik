@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cabai Hidroponik</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- AOS CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script>
+    (function() {
+      emailjs.init("mfFApUsid91TPFcx_"); // Ganti dengan User ID dari EmailJS
+    })();
+  </script>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">CABAI HIDROPONIK GIRINDRA FARM</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="profil.html">Profil Usaha</a></li>
+        <li><a href="tentang.html">Tentang Kami</a></li>
+        <li><a href="produk.html">Produk</a></li>
+        <li><a href="docs/ProposalChangeManagementNaufal.pdf" download>Proposal</a></li>
+      </ul>
+    </div>
+  </nav>
+
+
+<!-- Profil Usaha -->
+<section class="profil-usaha" id="profil" data-aos="fade-up">
+  <div class="profil-container">
+    <div class="profil-box">
+    <h2>Profil Usaha</h2>
+      <div class="profil-item" data-aos="fade-right">
+        <h3>Nama Usaha</h3>
+        <p>Girindra Farm</p>
+      </div>
+      <div class="profil-item" data-aos="fade-right" data-aos-delay="5">
+        <h3>Lokasi</h3>
+        <p><a href="https://maps.app.goo.gl/PSHDwy3w5W8EoKBC6" target="_blank">Ayani 2 Parit Bugis</a></p>
+      </div>
+      <div class="profil-item" data-aos="fade-right" data-aos-delay="10">
+        <h3>Produk Utama</h3>
+        <p>Cabai Hidroponik Segar dan Berkualitas Tinggi</p>
+      </div>
+      <div class="profil-item" data-aos="fade-right" data-aos-delay="15">
+        <h3>Kontak</h3>
+        <p><a href="https://wa.me/6285828383106" target="_blank">+62 858-2838-3106 (WhatsApp)</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  
+<!-- Tombol Kirim -->
+  <div class="floating-button" onclick="kirimPesan()">
+    <span id="tombol-text">Kirim Pesan</span>
+    <span id="tombol-centang" style="display:none;">✅</span>
+  </div>
+
+  <!-- Notifikasi -->
+  <div id="notif" class="notif-sukses">Pesan telah dikirim!</div>
+
+  <!-- Footer -->
+  
+
+  <script src="script.js"></script>
+  <!-- AOS JS -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000, // durasi animasi (ms)
+      once: false      // animasi hanya muncul 1 kali saat scroll
+    });
+  </script>
+
+</body>
+</html>

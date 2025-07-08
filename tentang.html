@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cabai Hidroponik</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- AOS CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script>
+    (function() {
+      emailjs.init("mfFApUsid91TPFcx_"); // Ganti dengan User ID dari EmailJS
+    })();
+  </script>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">CABAI HIDROPONIK GIRINDRA FARM</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="profil.html">Profil Usaha</a></li>
+        <li><a href="tentang.html">Tentang Kami</a></li>
+        <li><a href="produk.html">Produk</a></li>
+        <li><a href="docs/ProposalChangeManagementNaufal.pdf" download>Proposal</a></li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <!-- Tentang Kami -->
+  <section class="tentang" id="tentang" data-aos="fade-up" data-aos-delay="50">
+    <div class="tentang-container">
+      <h2>Tentang Kami</h2>
+      <p>Girindra Farm hadir sebagai bentuk jawaban atas kebutuhan masyarakat akan komoditas cabai yang berkualitas tinggi, stabil, dan berkelanjutan. Cabai adalah salah satu bahan pokok yang penting bagi dapur Indonesia maupun industri makanan, namun proses budidayanya secara konvensional masih sering terkendala oleh cuaca, lahan terbatas, serta risiko hama dan penyakit tanah.</p>
+      <p>Kami mengembangkan budidaya cabai secara hidroponik, sebuah metode pertanian modern yang memungkinkan tanaman tumbuh tanpa tanah, dengan media tanam seperti cocopeat dan sekam bakar, serta larutan nutrisi yang terkontrol. Sistem ini menjadikan proses bercocok tanam lebih efisien, ramah lingkungan, dan minim risiko.</p>
+      <p>Dengan pendekatan ini, Girindra Farm dapat menghasilkan cabai dengan kualitas yang lebih terjaga, pertumbuhan yang lebih cepat, dan panen yang konsisten sepanjang tahun bahkan di tengah keterbatasan lahan, khususnya di wilayah perkotaan Pontianak.</p>
+      <p>Kami percaya bahwa pertanian masa kini harus mampu beradaptasi dengan tantangan zaman. Karena itu, melalui sistem hidroponik yang kami terapkan, Girindra Farm tidak hanya menawarkan produk yang baik, tetapi juga solusi pertanian yang relevan dan berorientasi jangka panjang.</p>
+      <p>Kami hadir di pontianak sebagai Farm cabai hidroponik terbaik yang dapat menjanjikan kualitas serta kuantitas produk.</p>
+    </div>
+  </section>
+
+  
+<!-- Tombol Kirim -->
+  <div class="floating-button" onclick="kirimPesan()">
+    <span id="tombol-text">Kirim Pesan</span>
+    <span id="tombol-centang" style="display:none;">✅</span>
+  </div>
+
+  <!-- Notifikasi -->
+  <div id="notif" class="notif-sukses">Pesan telah dikirim!</div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="sosmed-icons">
+    <a href="https://instagram.com/girindra_salman/" target="_blank">
+      <img src="images/instagram.png" alt="Instagram" />
+    </a>
+    <a href="https://tiktok.com/@salmangirindra/" target="_blank">
+      <img src="images/tiktok.png" alt="TikTok" />
+    </a>
+    <a href="https://facebook.com/profile.php?id=100011698658044" target="_blank">
+      <img src="images/facebook.png" alt="Facebook" />
+    </a>
+    </div>
+    <p>&copy; 2025 Cabai Hidroponik</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <!-- AOS JS -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000, // durasi animasi (ms)
+      once: false      // animasi hanya muncul 1 kali saat scroll
+    });
+  </script>
+
+</body>
+</html>

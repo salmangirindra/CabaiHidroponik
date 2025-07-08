@@ -1,0 +1,860 @@
+/* ===== STYLE DASAR ===== */
+body {
+  font-family: sans-serif;
+  margin: 0;
+  background-color: #efffea;
+  color: #333;
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+  background-color: #000000;
+  padding: 20px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1800px;
+  margin: 0 auto;
+}
+
+.logo { 
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 20px;
+  text-shadow: 0 0 5px rgb(255, 255, 255); /* Lebih halus dari box-shadow */
+  display: inline-block; /* Lebih cocok untuk elemen seperti teks */
+}
+
+.nav-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+  text-shadow: 0 0 5px rgb(255, 255, 255);
+}
+
+.nav-links li a:hover {
+  color: #77d868;
+}
+
+/* ===== HEADER ===== */
+header {
+  background-image: url("images/cabai6.jpeg"); /* Gambar jadi background */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: rgb(107, 225, 92);
+  text-align: center;
+  padding: 300px 10px;
+  position: relative;
+}
+
+.header-content {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgb(255, 255, 255);
+  display: inline-block;
+  max-width: 90%;
+  margin: auto;
+}
+
+.header-content h1 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.header-content p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.cta {
+  background: #009f00;
+  color: #ffffff;
+  padding: 10px 20px; 
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.cta:hover {
+  background: #d4ffd4;
+  color: rgb(255, 255, 255);
+}
+
+
+/* ===== PRODUK ===== */
+.produk {
+  background: #efffea;
+  padding: 50px 20px;
+}
+
+.produk-container {
+  max-width: 2100px;
+  margin: 0 auto;
+}
+
+.produk-horizontal {
+  display: flex;
+  flex-direction: row;
+  background: rgb(255, 255, 255);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  width: 100%;
+}
+
+.produk-horizontal img {
+  width: 800px;
+  height: 700px;
+  object-fit: cover; /* Atur apakah gambar diisi atau ditutupi */
+  object-position: 25% 75%; /* Atur posisi gambar: horizontal dan vertikal */
+}
+
+.produk-info {
+  padding: 50px;
+  text-align: left;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.produk-info h3 {
+  margin-top: 0;
+  font-size: 24px;
+  color: #333;
+  font-size: 40px;
+}
+
+.produk-info p {
+  margin: 10px 0 20px;
+  color: #555;
+  font-size: 30px;
+  text-align: justify;
+}
+
+.produk-info span {
+  font-weight: bold;
+  color: #2e7d32;
+  font-size: 25px;
+}
+
+/* ===== SECTION LAINNYA ===== */
+section {
+  padding: 40px 20px;
+}
+
+.tentang {
+  background-color: #efffea;
+}
+
+.tentang h2{
+  background-color: transparent;
+  text-align: center;
+  font-size: 50px;
+  color: rgb(255, 255, 255);
+  text-shadow: 0 0 5px rgb(137, 137, 137);
+}
+
+.tentang p {
+  background-color: transparent;
+  text-align: justify;
+  font-size: 30px;
+  color: rgb(255, 255, 255);
+  text-shadow: 0 0 5px rgb(137, 137, 137);
+}
+
+.tentang-container {
+  position: relative;
+  padding: 30px;
+  margin: 30px auto;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 1700px;
+  background: transparent;
+  overflow: hidden;
+  z-index: 0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.tentang-container::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-image: url("images/cabai1.jpeg");
+  background-size: cover;
+  background-position: center;
+  filter: blur(10px);
+  background-color: #e3ffdb;
+  z-index: -1; /* Supaya tetap di belakang teks */
+  transform: scale(1.1); /* Agar tidak terlihat ada garis pinggir blur */
+  border-radius: 12px;
+}
+
+.tentang-ringkasan {
+  position: relative;
+  z-index: 1;
+}
+
+
+.tentang-btn-wrapper {
+  position: relative;
+  text-align: center;
+  margin-top: 20px;
+  z-index: 3;
+}
+
+.tentang-btn {
+  background-color: #2e7d32;
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: background-color 0.3s ease;
+}
+
+.tentang-btn:hover {
+  background-color: #1b5e20;
+}
+
+.edukasi {
+  background-color: #efffea;
+  text-align: center;
+}
+
+
+
+/* ===== FOOTER ===== */
+footer {
+  text-align: center;
+  background: #000000;
+  padding: 20px;
+  color: #ffffff;
+}
+
+.sosmed-icons {
+  margin-bottom: 10px;
+}
+
+.sosmed-icons a {
+  margin: 0 10px;
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.sosmed-icons a img {
+  width: 30px;
+  height: 30px;
+}
+
+.sosmed-icons a:hover {
+  transform: scale(1.2);
+}
+
+.edukasi {
+  background-color: #efffea;
+  padding: 40px 20px;
+  width: auto;
+  margin: 0 ;
+  text-align: left;
+}
+
+.edukasi-container {
+  background-color: rgba(255, 255, 255, 0.9); /* Putih transparan */
+  padding: 30px;
+  margin: 30px auto;
+  border-radius: 12px;
+  max-width: auto;
+  width: 1700px;
+  height: auto;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.edukasi h2 {
+  color: #509853;
+  text-align: center;
+  font-size: 30px;
+}
+
+.edukasi p {
+  text-align: justify;
+  font-size: 20px;
+}
+
+.edukasi ul, .edukasi ol {
+  text-align: left;
+  font-size: 20px;
+  padding-left: 20px; /* Sesuaikan dengan indentasi <p> */
+  margin-left: 0;
+  text-align: justify;
+}
+
+.edukasi li {
+  margin-bottom: 10px;
+  text-align: auto;
+  text-align: justify;
+}
+
+
+.floating-button {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background-color: #2e7d32;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 30px;
+  cursor: pointer;
+  z-index: 1000;
+  font-weight: bold;
+}
+
+.notif-sukses {
+  position: fixed;
+  bottom: 80px;
+  left: 20px;
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  z-index: 999;
+  display: none;
+}
+
+/* ===== PROFIL USAHA (1 box besar) ===== */
+.profil-usaha {
+  background-color: #efffea;
+  padding: 60px 20px;
+}
+
+.profil-container {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.profil-usaha h2 {
+  font-size: 50px;
+  color: #2e7d32;
+  margin-bottom: 60px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.profil-box {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: left;
+}
+
+.profil-item {
+  margin-bottom: 20px;
+}
+
+.profil-item h3 {
+  margin: 0;
+  font-size: 30px;
+  color: #2e7d32;
+  text-align: center;
+}
+
+.profil-item p {
+  margin: 5px 0 0;
+  font-size: 25px;
+  color: #333;
+  text-align: center;
+}
+
+.profil-box a {
+  color: #333;
+  text-decoration: none;
+
+}
+
+.profil-box a:hover {
+  text-decoration: underline;
+}
+
+/* ===== TENTANG PRODUK NEW ===== */
+.tentang-hidroponik {
+  background-color: #d1f5c5;
+  padding: 60px 20px;
+}
+
+.hidroponik-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  max-width: 1400px;
+  margin: auto;
+}
+
+.hidroponik-left img {
+  max-width: 100%;
+  width: 500px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.hidroponik-right {
+  max-width: 650px;
+}
+
+.hidroponik-right h2 {
+  color: #5ed062;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.hidroponik-right p {
+  color: #333;
+  font-size: 18px;
+  line-height: 1.7;
+  margin-bottom: 15px;
+}
+
+.hidroponik-right strong {
+  font-weight: 700;
+  color: #000000;
+}
+
+
+
+
+.unggul-hidroponik {
+  background-color: #bdeec2;
+  padding: 60px 0;
+}
+
+.unggul-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 50px;
+  flex-wrap: wrap;
+  padding: 0 20px;
+}
+
+.unggul-text {
+  flex: 1 1 500px;
+}
+
+.unggul-text h2 {
+  color: #5ed062;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.unggul-text ul {
+  padding-left: 20px;
+}
+
+.unggul-text li {
+  font-size: 18px;
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.unggul-text strong {
+  font-weight: 700;
+  color: #000;
+}
+
+.unggul-image {
+  flex: 1 1 400px;
+  display: flex;
+  justify-content: center;
+}
+
+.unggul-image img {
+  max-width: 100%;
+  width: 500px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+
+
+
+.cabai-hidroponik {
+  background-color: #bee8b8;
+  padding: 60px 0;
+}
+
+.cabai-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 50px;
+  flex-wrap: wrap;
+  padding: 0 20px;
+}
+
+.cabai-image {
+  flex: 1 1 500px;
+  display: flex;
+  justify-content: center;
+}
+
+.cabai-image img {
+  max-width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.cabai-text {
+  flex: 1 1 500px;
+}
+
+.cabai-text h2 {
+  font-size: 32px;
+  color: #5ed062;
+  margin-bottom: 20px;
+}
+
+.cabai-text p {
+  font-size: 18px;
+  color: #333;
+  line-height: 1.7;
+  margin-bottom: 15px;
+}
+
+
+
+
+.budidaya-section {
+  background-color: #c4ffca;
+  padding: 60px 20px;
+}
+
+.budidaya-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.budidaya-text {
+  flex: 1 1 550px;
+}
+
+.budidaya-text h2 {
+  font-size: 32px;
+  color: #2e7d32;
+  margin-bottom: 20px;
+}
+
+.budidaya-text ul {
+  list-style: disc inside;
+  padding-left: 0;
+  font-size: 18px;
+  color: #333;
+  line-height: 1.7;
+}
+
+.budidaya-text li {
+  margin-bottom: 15px;
+}
+
+.budidaya-image {
+  flex: 1 1 500px;
+  display: flex;
+  justify-content: center;
+}
+
+.budidaya-image img {
+  max-width: 200%;
+  width: 1000px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+
+/* ===================== RESPONSIVE FIX (FULL VERSION) ===================== */
+
+/* Cegah elemen melebar keluar layar */
+body {
+  overflow-x: hidden;
+}
+
+/* Pastikan semua elemen menghormati ukuran box */
+* {
+  box-sizing: border-box;
+}
+
+/* ================= Max Width: 1200px (Tablet & Laptop Kecil) ================= */
+@media (max-width: 1200px) {
+  .produk-horizontal {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .produk-horizontal img {
+    width: 100%;
+    height: auto;
+  }
+
+  .produk-info {
+    padding: 30px;
+    width: 100%;
+  }
+
+  .hidroponik-container,
+  .unggul-container,
+  .cabai-container,
+  .budidaya-container {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .budidaya-image img {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+/* ================= Max Width: 768px (HP & Tablet Potrait) ================= */
+@media (max-width: 768px) {
+  /* ===== NAVBAR ===== */
+  .nav-container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+    padding-left: 0;
+  }
+
+  .logo {
+    font-size: 18px;
+  }
+
+  /* ===== HEADER ===== */
+  header {
+    padding: 150px 20px;
+  }
+
+  .header-content {
+    padding: 20px;
+    margin: 0 auto;
+    width: 90%;
+  }
+
+  .header-content h1 {
+    font-size: 24px;
+  }
+
+  .header-content p {
+    font-size: 14px;
+  }
+
+  .cta {
+    padding: 10px 16px;
+    font-size: 14px;
+  }
+
+  /* ===== PRODUK ===== */
+  .produk-horizontal {
+    flex-direction: column;
+  }
+
+  .produk-horizontal img {
+    width: 100%;
+    height: auto;
+  }
+
+  .produk-info h3 {
+    font-size: 28px;
+  }
+
+  .produk-info p {
+    font-size: 18px;
+  }
+
+  /* ===== TENTANG KAMI ===== */
+  .tentang h2 {
+    font-size: 32px;
+  }
+
+  .tentang p {
+    font-size: 18px;
+  }
+
+  .tentang-container {
+    padding: 20px;
+  }
+
+  /* ===== PROFIL USAHA ===== */
+  .profil-container {
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  .profil-box {
+    padding: 20px;
+  }
+
+  .profil-item h3 {
+    font-size: 24px;
+  }
+
+  .profil-item p {
+    font-size: 16px;
+  }
+
+  /* ===== EDUKASI ===== */
+  .edukasi-container {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .edukasi h2 {
+    font-size: 24px;
+  }
+
+  .edukasi p,
+  .edukasi ul,
+  .edukasi li {
+    font-size: 16px;
+  }
+
+  /* ===== HIDROPONIK, UNGGUL, CABAI, BUDIDAYA ===== */
+  .hidroponik-right h2,
+  .unggul-text h2,
+  .cabai-text h2,
+  .budidaya-text h2 {
+    font-size: 26px;
+    text-align: center;
+  }
+
+  .hidroponik-right p,
+  .unggul-text li,
+  .cabai-text p,
+  .budidaya-text li {
+    font-size: 16px;
+    text-align: justify;
+  }
+
+  .hidroponik-container,
+  .unggul-container,
+  .cabai-container,
+  .budidaya-container {
+    padding: 0 20px;
+  }
+
+  .hidroponik-left img,
+  .unggul-image img,
+  .cabai-image img,
+  .budidaya-image img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* ===== FLOATING BUTTON ===== */
+  .floating-button {
+    padding: 10px 16px;
+    font-size: 14px;
+  }
+
+  .notif-sukses {
+    padding: 8px 14px;
+    font-size: 14px;
+  }
+}
+
+/* ================= Max Width: 480px (HP Kecil) ================= */
+@media (max-width: 480px) {
+  .logo {
+    font-size: 16px;
+  }
+
+  .header-content h1 {
+    font-size: 20px;
+  }
+
+  .header-content p {
+    font-size: 13px;
+  }
+
+  .cta {
+    font-size: 13px;
+  }
+
+  .tentang h2,
+  .profil-usaha h2 {
+    font-size: 24px;
+  }
+
+  .tentang p,
+  .profil-item p {
+    font-size: 14px;
+  }
+
+  .profil-item h3 {
+    font-size: 18px;
+  }
+
+  .hidroponik-right p,
+  .cabai-text p,
+  .unggul-text li,
+  .budidaya-text li {
+    font-size: 14px;
+  }
+
+  .edukasi h2 {
+    font-size: 20px;
+  }
+
+  .edukasi p,
+  .edukasi ul,
+  .edukasi li {
+    font-size: 14px;
+  }
+
+  .floating-button {
+    padding: 8px 12px;
+    font-size: 13px;
+  }
+
+  .notif-sukses {
+    padding: 6px 12px;
+    font-size: 13px;
+  }
+}

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cabai Hidroponik</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- AOS CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script>
+    (function() {
+      emailjs.init("mfFApUsid91TPFcx_"); // Ganti dengan User ID dari EmailJS
+    })();
+  </script>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">CABAI HIDROPONIK GIRINDRA FARM</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="profil.html">Profil Usaha</a></li>
+        <li><a href="tentang.html">Tentang Kami</a></li>
+        <li><a href="produk.html">Produk</a></li> 
+        <li><a href="docs/ProposalChangeManagementNaufal.pdf" download>Proposal</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header>
+  <div class="header-content" data-aos="fade-up">
+    <h1>CABAI HIDROPONIK</h1>
+    <p>Cabai Hidroponik Grindra Farm Berkualitas Tinggi</p>
+    <a href="https://wa.me/6285828383106" class="cta">Pesan via WhatsApp</a>
+  </div>
+</header>
+
+<!-- Tentang Kami -->
+ <section class="tentang" id="tentang" data-aos="fade-up" data-aos-delay="50">
+  <div class="tentang-container">
+    <h2>Tentang Kami</h2>
+
+    <div class="tentang-ringkasan">
+      <p>Girindra Farm hadir sebagai bentuk jawaban atas kebutuhan masyarakat akan komoditas cabai yang berkualitas tinggi, stabil, dan berkelanjutan. Cabai adalah salah satu bahan pokok yang penting bagi dapur Indonesia maupun industri makanan, namun proses budidayanya secara konvensional masih sering terkendala oleh cuaca, lahan terbatas, serta risiko hama dan penyakit tanah. Baca di Selengkapnya</p>
+    </div>
+
+    <div class="tentang-btn-wrapper">
+      <a href="tentang.html" class="tentang-btn">Selengkapnya</a>
+    </div>
+  </div>
+</section>
+
+  <!-- Produk -->
+<section class="produk" data-aos="fade-up" data-aos-delay="50">
+  <div class="produk-container">
+    <div class="produk-horizontal">
+      <img src="images/cabai7.jpeg" alt="Briket Standard Masak">
+      <div class="produk-info">
+        <h3>Cabai Hidroponik Segar</h3>
+        <p>Cabai hidroponik segar adalah hasil pertanian modern yang ditanam tanpa menggunakan tanah, melain....</p>
+        <div class="tentang-btn-wrapper">
+          <a href="produk.html" class="tentang-btn">Selengkapnya</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+  
+<!-- Tombol Kirim -->
+  <div class="floating-button" onclick="kirimPesan()">
+    <span id="tombol-text">Kirim Pesan</span>
+    <span id="tombol-centang" style="display:none;">✅</span>
+  </div>
+
+  <!-- Notifikasi -->
+  <div id="notif" class="notif-sukses">Pesan telah dikirim!</div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="sosmed-icons">
+    <a href="https://instagram.com/girindra_salman/" target="_blank">
+      <img src="images/instagram.png" alt="Instagram" />
+    </a>
+    <a href="https://tiktok.com/@salmangirindra/" target="_blank">
+      <img src="images/tiktok.png" alt="TikTok" />
+    </a>
+    <a href="https://facebook.com/profile.php?id=100011698658044" target="_blank">
+      <img src="images/facebook.png" alt="Facebook" />
+    </a>
+    </div>
+    <p>&copy; 2025 Cabai Hidroponik</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <!-- AOS JS -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000, // durasi animasi (ms)
+      once: false      // animasi hanya muncul 1 kali saat scroll
+    });
+  </script>
+</body>
+</html>
